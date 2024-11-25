@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTF☮</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            padding-bottom:30px;
+            padding-top: 10px;
+           
+        }
+        .logo{
+            position: absolute;
+            left: 2.5%;
+            top: 0.5%;
+            width: 150px;
+            height: 80px;
+        }
+        .search{
+            float: right;
+            position: absolute;
+            top: 3.5%;
+            right: 20%;
+            font-size: 21px;
+            background-color: #282727;
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+        .searcht{
+            float: right;
+            position: absolute;
+            top: 4.5%;
+            right: 37%;
+            font-size: 13px;
+            color: white;
+            color: #c3c1c1;
+        }
+    li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .head{
+        margin-right: 1130px;
+        font-weight: 600;
+        font-size: x-large;
+        position: absolute;
+        margin-top: 35px;
+        color: azure;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .tail{
+        border-right: 1px solid black;
+        background-color:white ;
+        opacity: 0.5;
+    }
+    li a:hover:not(.tail){
+        background-color:rgb(237, 82, 113);
+    }
+    hr{
+        margin-top: 0px;
+    }
+ol{
+list-style-type: none;
+display: flex;
+overflow: hidden;
+background-color: black;
+padding: 10px 120px;
+
+}
+.k a{
+    display: block;
+    color: white;
+}
+li a:hover:not(.sup){
+    background-color:white ;
+    color:black;
+}
+.nill{
+    position: relative;
+}
+.centre{
+    position: absolute;
+    right:10%;
+    top:30%;
+    font-size: 4rem;
+}
+.row{
+    position: absolute;
+    right:10%;
+    top:40%;
+    font-size: 4rem;
+}
+.roww{
+    position: absolute;
+    right:15%;
+    top:55%;
+    opacity: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.our{
+    font-weight: 500;
+    font-size: 2rem;
+    opacity: 0.85;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+
+}
+div.rec{
+    margin-left: 22px;
+    border: 0.1px solid #ccc;
+    float: left;
+    width: 350px;
+    height: 300px;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+div.rec:hover{
+    border: 2px solid #777;
+}
+div.con{
+    padding: 15px;
+    text-align: center;
+}
+.float img {
+    margin-top: 200px;
+    margin-left: 120px;
+    width: 400px;
+    height: 250px;
+    
+}
+.flew{
+    position: absolute;
+    right: 10px;
+    top: 1710px;
+    font-size: 20px;
+    margin-right: 60px;
+    margin-left: 555px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flews{
+    position: absolute;
+    right: 660px;
+    top: 1670px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.button{
+    display: inline-block;
+    background-color: rgb(68, 240, 125);
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin-left: 48px;
+}
+div a:hover:not(.button){
+    opacity: 0.5;
+}
+.all{
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 110px;
+    margin-top: 150px;
+}
+.box{
+    list-style-type: none;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 60px;
+    /* border:1px solid black; */
+    margin-right: 1013.5px;
+}
+.bo{
+    background-color: white;
+    color: black;
+    border:1px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.boxx{
+    background-color: black;
+    color: white;
+
+}
+.allp{
+    margin-top: 80px;
+    margin-left: 70px;
+    font-weight: 500;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hre{
+    margin: 20px;
+}
+.btimg{
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    border: 0.5px solid whitesmoke;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+div:hover(.btimg){
+    border: 1px solid black ;
+}
+.roll{
+    margin-top: 10px;
+    
+}
+.rol{
+    margin-bottom: 10px;
+}
+/* .btimg{
+   float: left;
+   margin: 10px;
+   width: 350px;
+   margin-top: 100px; 
+}
+.ro{
+    position: absolute;
+    left: 7%;
+    top: 370%;
+}
+.ols{
+    position: absolute;
+    left:06%;
+    top:373%;
+
+}
+
+.rol{
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 320px;
+}
+.olls{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 345px;
+}
+
+.roll{
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 345px;
+}
+.lls{
+    position: absolute;
+    margin-left: 840px;
+    margin-top: 370px;
+}
+.rolls{
+    position: absolute;
+    margin-left: 1230px;
+    margin-top: 330px;
+}
+.ls{
+    position: absolute;
+    margin-left: 1210px;
+    margin-top: 360px;
+} */
+    </style>
+</head>
+<body> 
+    <ul >
+        <img class="logo" src="img/t_rolls-royce-logo-6795.png" alt="RR" width="100px" height="30px">
+        <li class="head" style="float: left;">Bright to the Future</li>
+        <li class="tail"><a href="project1.html" target="_blank">Home</a></li>
+        <li class="tail"><a href="#">For Enqiury </a></li>
+        <li class="tail"><a href="tel:+91 904062072">Contact us</a></li>
+       </ul>
+       <form action="/action_page.php" ><p class="searcht">Privacy Policy/Provider</p>
+        <input class="search" type="text" placeholder="Your Search term.." name="search">
+        <button  class="search" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+<hr>
+    <ol class="k">
+            <li class="sup"><a href="#">Our Models</a></li>
+            <li class="sup"><a href="#">Buy Online</a></ul>
+            <li class="sup"><a  href="#">Finance</a></li>
+            <li class="sup"><a  href="#">Service</a></li>
+     </ol>  
+     <div>    
+       <img class="nill" src="img/rolls-royce-arcadia-3840x2160-15612.jpg" width="100%" height="auto" alt="Roll-Royce"> 
+       <p class="centre">Outstanding in  </p> 
+       <p class="row">every way.</p>
+       <p class="roww">The Rolls-Royce-arcadia</p>
+     </div>   
+    <p class="our">Our recommentations.</p>
+
+    <div class="rec" >
+        <img  src="img/rolls-royce-boat-tail-worlds-.jpg" alt="rrolls-royce-Boat Tail" width="350px" height="auto">
+        <div class="con"><b> Rolls Royce Boat Tail</b> A once-in-a-lifetime experience.</div>
+    </div>
+    <div class="rec">
+        <img   src="img/rolls-royce-continent.jpg" alt="rolls-royce-Phantom" width="350px">
+        <div class="con"><b> Rolls-Royce Phantom</b> Extended Series II provides an escape to a world beyond the ordinary.</div>
+    </div>
+    <div class="rec">
+        <img   src="img/rolls-royce-ghost-2020-white-.jpg" alt="rolls-royce-ghost" width="350px">
+        <div class="con"><b>Rolls Royce Ghost</b> Experience infinite bespoke expression with ghost.</div>
+    </div>
+    <div class="rec">
+        <img  src="img/rolls-royce-cullinian.jpg" alt="rolls-royce-cullinian" width="350px">
+        <div class="con"><b>Rolls Royce Cullinan</b> Series II For luxury voyagers of discovery.
+            For the restless few who excel beyond limits.</div>
+    </div>
+<div class="float" >
+    <img src="img/rolls-royce-arcadia-buy.jpg" alt="Rolls Royce" width="300px">
+     <aside class="flews">Buy a new car online</aside>
+    <aside class="flew"> Your way to your dream car. It's just a few steps to your Mercedes-Benz. Convenient and possible from anywhere. Fast. Easy. Secure.</aside>
+    <button class="button">Find available cars</button>
+</div>
+<div>
+    <p class="all">All model</p>
+</div>
+<div class="box">
+    <li><a class="boxx" >All model</a></li>
+    <li><a class="bo" href="#allp">Phantom</a></li>
+    <li><a class="bo" href="#">Ghost</a></li>
+    <li><a class="bo" href="#">Cullinan</a></li>
+    <li><a class="bo" href="#">Spectra</a></li>
+</div>
+<div class="botttom">
+    <p class="allp">Phantom</p><hr class="hre">
+  <div class="btimg">
+    <img  src="img/white2 rr couple.jpg" width="350px">
+    <div class="roll">Rolls-Royce Phantom</div>
+    <div class="rol">Staring from 4,65,25,000.00</div>
+  </div >
+  <div class="btimg">
+    <img  src="img/white4 rr ghost.jpg" width="350px">
+    <div class="roll">Rolls-Royce Phantom</div>
+    <div class="rol">Staring from 4,65,25,000.00</div>
+  </div>
+   <div class="btimg">
+    <img  src="img/white6 rr ghost.jpg" width="350px" >
+    <div class="roll">Rolls-Royce Phantom</div>
+    <div class="rol">Staring from 4,65,25,000.00</div>
+  </div>
+  <div class="btimg">
+    <img  src="img/white1 rr ghost.jpg" width="350px">
+    <div class="roll">Rolls-Royce Phantom</div>
+    <div class="rol">Staring from 4,65,25,000.00</div>
+  </div>
+</div>
+
+</body>
+</html>

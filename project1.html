@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚗Dhanesh</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body> 
+   <ul >
+       <li class="head">Bright to the Future</li>
+       <li class="tail"><a href="project2.html">Sign in </a></li>
+       <li class="tail"><a href="#">Service </a></li>
+       <li class="tail"><a href="tel:+91 904062072">Contact us</a></li>
+      </ul>
+       <header><h2>Future Endouver:</h2></header>
+   <section>
+    <img src="img/ford.jpg" width="23.4% "/>
+        <p>
+            Welcome to Bright to the Future, the ultimate destination for luxury and performance automobiles. Since our inception in 2024, we have been dedicated to providing an exceptional car buying experience for discerning customers. Our state-of-the-art showroom boasts an extensive selection of the latest models from prestigious brands such as BMW, Mercedes-Benz, Audi, and Tesla. Each vehicle is meticulously chosen to ensure we offer only the finest in design, technology, and performance. At Bright to the Future, our knowledgeable and friendly staff are passionate about cars and committed to delivering personalized service. Whether you are looking for a sleek sedan, a powerful SUV, or an innovative electric vehicle, our team will guide you through our diverse inventory to find the perfect match for your lifestyle and preferences. We believe that our relationship with customers extends beyond the initial sale. Our cutting-edge service center is staffed by highly trained technicians who provide top-tier maintenance and repair services to keep your vehicle running smoothly. We also offer flexible financing options and comprehensive after-sales support to ensure a seamless ownership experience. Discover the difference at Bright to the Future, where luxury, performance, and exceptional service converge. Visit us today and embark on your journey with a brand that epitomizes excellence in the automotive world.
+          </p>
+    </section>
+
+    <h1 class="mid"> Cars Collections</h1>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 9</div>
+    <img src="img/gts benz.jpg" style="width:80%; height: auto;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 9</div>
+    <img src="img/gtr.jpg" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 9</div>
+    <img src="img/pexels-erik-mclean-9846101.jpg" style="width:80%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 9</div>
+    <img src="img/pexels-radu-daniel-(-mrd-)-7391663.jpg" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 9</div>
+    <img src="img/supra.jpg" style="width:80%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 9</div>
+    <img src="img/Thar.jpg" style="width:80%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 9</div>
+    <img src="img/Dodge.jpg" style="width:80%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 9</div>
+    <img src="img/mustang.jpg" style="width:80%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">9 / 9</div>
+    <img src="img/bgw urus green.jpeg" style="width:80%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/gts benz.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mercedes-Benz">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gtr.jpg" style="width:95%" onclick="currentSlide(2)" alt="Nission GTR">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/pexels-erik-mclean-9846101.jpg" style="width:95%" onclick="currentSlide(3)" alt="BMW 530 D">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/pexels-radu-daniel-(-mrd-)-7391663.jpg" style="width:95%" onclick="currentSlide(4)" alt="Lamborgini">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/supra.jpg" style="width:95%" onclick="currentSlide(5)" alt="Supra">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/Thar.jpg" style="width:95%" onclick="currentSlide(6)" alt="Thar">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/Dodge.jpg" style="width:95%" onclick="currentSlide(7)" alt="Dodge">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/mustang.jpg" style="width:95%" onclick="currentSlide(8)" alt="Mustang">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/bgw urus green.jpeg" style="width:95%" onclick="currentSlide(9)" alt="Green Urus">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="born">
+<h2>Born in India, traveled around the world</h2>
+<p>Cars have always been more than just a mode of transportation; they symbolize freedom, adventure, and the thrill of the open road. "The car symbolizes freedom to live, travel, and create your own identity." Another perspective is that "The best car safety device is a rearview mirror with a cop in it," emphasizing the blend of innovation and practicality in car design. The passion for cars is evident in the idea that "The car is the closest thing we will ever create to something that is alive." The allure of cars can be summed up in the statement, "Racing is life. Anything before or after is just waiting." These quotes celebrate the car's role in our lives, evoking a sense of excitement and possibility.Cars have always been more than just a mode of transportation; they symbolize freedom, adventure, and the thrill of the open road. "The car symbolizes freedom to live, travel, and create your own identity." Another perspective is that "The best car safety device is a rearview mirror with a cop in it," emphasizing the blend of innovation and practicality in car design. The passion for cars is evident in the idea that "The car is the closest thing we will ever create to something that is alive." The allure of cars can be summed up in the statement, "Racing is life. Anything before or after is just waiting." These quotes celebrate the car's role in our lives, evoking a sense of excitement and possibility.</p>
+</div>
+<footer  class="foot" style="text-align: center; background-color: rgb(45, 63, 45); padding: 10px; color: white;"><p2 style="font-style: italic;">To Know More</p2><a href="project2.html"> Sign in</a>
+</footer>
+  
+</body>
+</html>

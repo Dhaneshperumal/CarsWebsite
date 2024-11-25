@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Page</title>
+    <style>
+       body{
+        background-image: url(img/pexels-erik-mclean-5628292.jpg);
+        background-repeat: no-repeat;
+       background-size: cover;
+       }
+.order{
+  text-align: center;
+  font-weight: 300px;
+}
+.align{
+  border: 2px solid;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+button,select{
+  font-weight: inherit;
+}
+.correct{
+  margin-top: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  border-right:1px solid white ;
+}
+li a {
+  display: block;
+  color: white;
+  padding:16px;
+  text-decoration: none;
+}
+.head{
+  font-weight: 700;
+  font-size: xx-large;
+  float: left;
+  margin-right: 900px;
+  margin-top: 5px;
+  color: white;
+}
+.tail{
+  background-color:brown;
+}
+li a:hover:not(.tail){
+  background-color:yellow;
+}
+footer{
+  background-color: transparent ;
+  text-align: center;
+  margin-top: 355px;
+  color: white;
+}
+    </style>
+</head>
+<body>
+  <ul >
+    <li class="head">Bright to the Future</li>
+    <li class="tail"><a href="project2.html">Sign in </a></li>
+    <li class="tail"><a href="#">Service </a></li>
+    <li class="tail"><a href="tel:+91 904062072">Contact us</a></li>
+   </ul>
+<center>
+  <h1 class="order">Sign in to Expore More about car collection </h1>
+  <div class="correct">
+    <form class="align">
+        <label for="userName">UserName : </label>
+         <input class="box" type="text" name="userName" placeholder=" Enter Your userName"  required/>
+        <br>
+        <label for="password">password : </label>
+         <input class="box" type="password" name="userName" placeholder="password"  required/>
+        <br>
+        <label for="userName">UserName : </label>
+        <input class="box" type="password" name="password" placeholder=" Confirm password" required />
+       <br>
+       <label for="email">Email : </label>
+       <input class="box" type="email" name="email" placeholder=" Enter Your email" required />
+      <br>
+        <label class="five">Location :</label>
+        <select class="box" >
+          <option>Chennai</option>
+          <option>Thirchy</option>
+          <option>Madurai</option>
+          <option>Virudhunagar</option>
+          <option>Namakkal</option>
+          <option>Puthucherry</option>
+          <option>thirunelveli</option>
+          <option>Kanyakumari</option>
+          <option>Karaikal</option>
+        </select>
+      <br>
+     <a href="project3.html"> <button type="button" name="Register">Register</button></a><br>
+    </form>
+  </div>
+</center>
+<footer>
+  Bright in to Future,Since 2024...
+  <a href="mailto:dhaneshperumal@gmail.com">dhaneshperumal@gmail.com</a>
+</footer>
+</body>
+</html>
