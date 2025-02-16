@@ -5,110 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in Page</title>
     <style>
-       body{
-        background-image: url(img/pexels-erik-mclean-5628292.jpg);
-        background-repeat: no-repeat;
-       background-size: cover;
-       }
-.order{
-  text-align: center;
-  font-weight: 300px;
-}
-.align{
-  border: 2px solid;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1.4rem;
-}
-button,select{
-  font-weight: inherit;
-}
-.correct{
-  margin-top: 50px;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  border-right:1px solid white ;
-}
-li a {
-  display: block;
-  color: white;
-  padding:16px;
-  text-decoration: none;
-}
-.head{
-  font-weight: 700;
-  font-size: xx-large;
-  float: left;
-  margin-right: 900px;
-  margin-top: 5px;
-  color: white;
-}
-.tail{
-  background-color:brown;
-}
-li a:hover:not(.tail){
-  background-color:yellow;
-}
-footer{
-  background-color: transparent ;
-  text-align: center;
-  margin-top: 355px;
-  color: white;
-}
+        body {
+            background-image: url(img/pexels-erik-mclean-5628292.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .order {
+            text-align: center;
+            font-weight: 300;
+            color: rgb(13, 13, 13);
+            margin-bottom: 20px;
+            font-size: xx-large;
+            margin-top: 100px;
+        }
+
+        .align {
+            border: 2px solid #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: white;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        input, select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        button {
+            padding: 12px 24px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border-right: 1px solid white;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .head {
+            font-weight: 700;
+            font-size: xx-large;
+            float: left;
+            margin-right: auto;
+            margin-top: 5px;
+            color: rgb(6, 6, 6);
+        }
+
+        .tail {
+            background-color: brown;
+        }
+
+        li a:hover:not(.tail) {
+            background-color: yellow;
+        }
+
+        footer {
+            background-color: transparent;
+            text-align: center;
+            margin-top: auto;
+            padding: 20px;
+            color: white;
+            width: 100%;
+        }
+        .reg{
+          text-decoration: none;
+          color: white;
+        }
     </style>
 </head>
 <body>
-  <ul >
-    <li class="head">Bright to the Future</li>
-    <li class="tail"><a href="project2.html">Sign in </a></li>
-    <li class="tail"><a href="#">Service </a></li>
-    <li class="tail"><a href="tel:+91 904062072">Contact us</a></li>
-   </ul>
-<center>
-  <h1 class="order">Sign in to Expore More about car collection </h1>
-  <div class="correct">
+    <ul>
+        <li class="head">Bright to the Future</li>
+        <li class="tail"><a href="project2.html">Sign in</a></li>
+        <li class="tail"><a href="#">Service</a></li>
+        <li class="tail"><a href="tel:+91 904062072">Contact us</a></li>
+    </ul>
+
+    <h1 class="order">Sign in to Explore More About Car Collection</h1>
     <form class="align">
-        <label for="userName">UserName : </label>
-         <input class="box" type="text" name="userName" placeholder=" Enter Your userName"  required/>
-        <br>
-        <label for="password">password : </label>
-         <input class="box" type="password" name="userName" placeholder="password"  required/>
-        <br>
-        <label for="userName">UserName : </label>
-        <input class="box" type="password" name="password" placeholder=" Confirm password" required />
-       <br>
-       <label for="email">Email : </label>
-       <input class="box" type="email" name="email" placeholder=" Enter Your email" required />
-      <br>
-        <label class="five">Location :</label>
-        <select class="box" >
-          <option>Chennai</option>
-          <option>Thirchy</option>
-          <option>Madurai</option>
-          <option>Virudhunagar</option>
-          <option>Namakkal</option>
-          <option>Puthucherry</option>
-          <option>thirunelveli</option>
-          <option>Kanyakumari</option>
-          <option>Karaikal</option>
-        </select>
-      <br>
-     <a href="project3.html"> <button type="button" name="Register">Register</button></a><br>
+        <div class="form-group">
+            <label for="userName">Username:</label>
+            <input type="text" id="userName" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option>Chennai</option>
+                <option>Thirchy</option>
+                <option>Madurai</option>
+                <option>Virudhunagar</option>
+                <option>Namakkal</option>
+                <option>Puthucherry</option>
+                <option>Thirunelveli</option>
+                <option>Kanyakumari</option>
+                <option>Karaikal</option>
+            </select>
+        </div>
+        <button type="submit" ><a class="reg" href="project3.html"> Register</a></button>
     </form>
-  </div>
-</center>
-<footer>
-  Bright in to Future,Since 2024...
-  <a href="mailto:dhaneshperumal@gmail.com">dhaneshperumal@gmail.com</a>
-</footer>
+
+    <footer>
+        Bright in to Future, Since 2024...
+        <a href="mailto:dhaneshperumal@gmail.com">dhaneshperumal@gmail.com</a>
+    </footer>
 </body>
 </html>
